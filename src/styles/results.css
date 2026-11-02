@@ -120,7 +120,7 @@
 @media (max-width: 767px) {
   .results-page .tab {
     overflow-wrap: normal;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     padding: 0.5rem 0.75rem;
   }
   .results-page .modern-table {
@@ -130,7 +130,7 @@
   .results-page .modern-table th,
   .results-page .modern-table td {
     min-width: 2rem;
-    padding: 0.4rem 0.5rem;
+    padding: 0.2rem 0.5rem;
     overflow-wrap: normal;
   }
 }
