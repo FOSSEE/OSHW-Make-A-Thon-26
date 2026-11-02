@@ -2,6 +2,7 @@
   --results-ink: #142b43;
   --results-blue: #0c4384;
   --results-green: #065e02;
+  --results-green-light: #96f091;
   --results-border: #dce5ef;
   min-height: 100vh;
   padding: clamp(2.5rem, 6vw, 5rem) clamp(1rem, 4vw, 3rem);
@@ -95,13 +96,14 @@
 
 .results-page .modern-table th {
   background: var(--results-blue);
+  /* border: 2px solid var(--results-green-light); */
   color: #fff;
   font-weight: 700;
 }
 
-.results-page .modern-table tr:last-child td {
+/* .results-page .modern-table tr:last-child td {
   border-bottom: 0;
-}
+} */
 
 .results-page .modern-table td[rowspan]:not([rowspan="1"]) {
   vertical-align: middle;

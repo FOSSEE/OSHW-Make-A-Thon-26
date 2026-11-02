@@ -18,13 +18,17 @@ const sheets = workbook.SheetNames
   <Navbar />
 <main class="site-main results-page" id="main-content">
 <div class="section-inner">
-<h1 class="text-center section-title" id="results">Dummy Test Results</h1>
+<h1 class="text-center section-title" id="results">Results</h1>
 
 <div class="tabs" aria-label="Result worksheets">
   {sheets.map((sheet, index) => (
     <button type="button" class:list={['tab', { active: index === 0 }]}
       data-tab={index} aria-controls={`tab-${index}`} aria-pressed={index === 0}>
-      {sheet.name}
+    
+   <!-- excel sheet limit the tab name by 31 characters -->
+{sheet.name === 'Notable Contribution by Women I'
+  ? 'Notable Contribution by Women Innovators'
+  : sheet.name}
     </button>
   ))}
 </div>
